@@ -12,9 +12,9 @@ def setup(request):
         # "deviceName": "RZ8T50P0JAT", # Blue phone
         # "deviceName": "R9PT60K71VA", # Tab
         "automationName": "UiAutomator2",
-        "appPackage": "com.opsishealth.platefuldev",
-        "appWaitActivity": "com.opsis.primary.MainActivity",
-        "app": "/Users/saumilrewari/PycharmProjects/Opsis/opsis_project/base/plateful_dev.apk"
+        "appPackage": "com.companyname.calculator",
+        "appWaitActivity": "com.companyname.calculator.MainActivity",
+        "app": "app-debug.apk"
     }
     driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
     driver.start_client()
