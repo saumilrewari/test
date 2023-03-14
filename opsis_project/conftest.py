@@ -14,7 +14,7 @@ def setup(request):
         "automationName": "UiAutomator2",
         "appPackage": "com.companyname.calculator",
         "appWaitActivity": "com.companyname.calculator.MainActivity",
-        "app": "app-debug.apk"
+        "app": "appdebug.apk"
     }
     driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
     driver.start_client()
