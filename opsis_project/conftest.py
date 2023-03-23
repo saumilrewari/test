@@ -14,9 +14,10 @@ def setup(request):
         "automationName": "UiAutomator2",
         "appPackage": "com.companyname.calculator",
         "appWaitActivity": "com.companyname.calculator.MainActivity",
-        "app": "appdebug.apk"
+        "app": "./opsis_project/base/appdebug.apk"
     }
     driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
+    print("**************************************** Driver Created Successfullyyyy ****************************************")
     driver.start_client()
 
     time.sleep(10)
