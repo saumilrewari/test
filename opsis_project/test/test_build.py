@@ -16,6 +16,7 @@ class Test_Build:
         """This test will verify the elements and functionality present on the launch page"""
         assert self.smoketest.test_pass()
 
+    @pytest.mark.xfail
     def test_pass_fail(self):
         """This test will verify the elements and functionality present on the launch page"""
         assert 2 + 2 == 5
